@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <a href="jquery_practice.html">الانتقال إلى الصفحة الثانية</a>
+    <title>JS Homework</title>
+</head>
+
+<body>
+    
+
+   
+<div class="input-group">
+    <label for="name" id="lName">Name:</label>
+    <input type="text" id="name" name="name">
+</div>
+
+
+<div class="buttons-group">
+    <button type="button" id="click_me">click me</button>
+    <button type="button" id="show_more">show more</button>
+    <button type="button" id="change_style">change style</button>
+</div>
+   
+    <script>
+
+  const clickBtn = document.getElementById('click_me');
+  const nameInput = document.getElementById('name');
+  const showMoreBtn = document.getElementById('show_more');
+  const changeStyleBtn = document.getElementById('change_style');
+
+  clickBtn.addEventListener('click', function() {
+
+    const userName = nameInput.value;
+    alert("Hello, Sir: " + userName);
+  });
+
+    showMoreBtn.addEventListener('click', function() {
+        const additionalInfo = document.createElement('p');
+        additionalInfo.style.color = "white";
+        additionalInfo.textContent = "This is my first Page in Computer Engineering Level 5  .";
+        document.body.appendChild(additionalInfo);
+    });
+
+    changeStyleBtn.addEventListener('click', function() {
+        document.body.style.fontFamily = "Arial, sans-serif";
+    });
+</script>
+
+
+    
+</body>
+</html>

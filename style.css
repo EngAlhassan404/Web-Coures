@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 10px;
+    gap: 12px;
+
+    background-image: url('zenitsu-agatsuma.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+#lName {
+    
+    color: white;
+}
+a {
+    color: white; 
+    text-decoration: none; 
+}
